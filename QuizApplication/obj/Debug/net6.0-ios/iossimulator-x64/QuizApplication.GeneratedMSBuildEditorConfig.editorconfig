@@ -1,0 +1,58 @@
+is_global = true
+build_property.TargetFramework = net6.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = QuizApplication
+build_property.ProjectDir = C:\Users\marci\OneDrive\Pulpit\QuizApplication\QuizApplication\
+
+[C:/Users/marci/OneDrive/Pulpit/QuizApplication/QuizApplication/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QuizApplication.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/marci/OneDrive/Pulpit/QuizApplication/QuizApplication/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QuizApplication.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/marci/OneDrive/Pulpit/QuizApplication/QuizApplication/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QuizApplication.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/marci/OneDrive/Pulpit/QuizApplication/QuizApplication/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QuizApplication.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/marci/OneDrive/Pulpit/QuizApplication/QuizApplication/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QuizApplication.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/marci/OneDrive/Pulpit/QuizApplication/QuizApplication/View/CategoriesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QuizApplication.View.CategoriesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\CategoriesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\CategoriesPage.xaml
+
+[C:/Users/marci/OneDrive/Pulpit/QuizApplication/QuizApplication/View/QuizPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QuizApplication.View.QuizPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\QuizPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\QuizPage.xaml
+
+[C:/Users/marci/OneDrive/Pulpit/QuizApplication/QuizApplication/View/WelcomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QuizApplication.View.WelcomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\WelcomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\WelcomePage.xaml

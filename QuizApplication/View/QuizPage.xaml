@@ -1,0 +1,90 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:QuizApplication.Views"
+             x:Class="QuizApplication.Views.QuizPage">
+    
+    <ContentPage.Content>
+        
+        <Grid Padding="10" BackgroundColor="#F5F5F5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            
+
+            
+            <ListView Grid.Row="1"
+                      ItemsSource="{Binding Categories}"
+                      SelectedItem="{Binding SelectedCategory}"
+                      IsVisible="{Binding IsCategorySelectionVisible}"
+                      BackgroundColor="White"
+                      SeparatorColor="#DDDDDD">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" TextColor="#333333"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            
+            <Label Grid.Row="2"
+                   Text="{Binding CurrentQuestion.Text}"
+                   FontSize="28"
+                   HorizontalOptions="Center"
+                   TextColor="#333333"
+                   IsVisible="{Binding IsQuizRunning}" />
+
+            
+            <ListView Grid.Row="3"
+                      ItemsSource="{Binding CurrentQuestion.Options}"
+                      ItemSelected="OnOptionSelected"
+                      IsVisible="{Binding IsQuizRunning}"
+                      BackgroundColor="White"
+                      SeparatorColor="#DDDDDD">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding .}" TextColor="#333333"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            
+            <Label Grid.Row="4"
+                   Text="{Binding ResultMessage}"
+                   FontSize="40"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"
+                   TextColor="#333333"
+                   IsVisible="{Binding QuizEnded}" />
+
+            
+            <Button Grid.Row="5"
+                    Text="Continue"
+                    Command="{Binding ContinueCommand}"
+                    IsVisible="{Binding QuizEnded}"
+                    BackgroundColor="#007BFF"
+                    TextColor="White"
+                    CornerRadius="10"
+                    HeightRequest="50"
+                    WidthRequest="150"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+
+
+            
+
+            
+            <Label Grid.Row="6"
+                   Text="{Binding Score, StringFormat='Score: {0}'}"
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   TextColor="#333333"
+                   IsVisible="{Binding IsQuizRunning}" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizApplication.Views.WelcomePage">
+    <ContentPage.Content>
+        <StackLayout Padding="10" VerticalOptions="CenterAndExpand">
+            <Label Text="Welcome to the Quizall!"
+                   FontSize="32"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+            <Button Text="Start Quiz"
+                    Command="{Binding StartQuizCommand}"
+                    BackgroundColor="#007BFF"
+                    TextColor="White"
+                    CornerRadius="10"
+                    HeightRequest="50"
+                    WidthRequest="150"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
